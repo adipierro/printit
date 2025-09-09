@@ -12,9 +12,9 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
+        py = pkgs.python312;
         pythonWithDeps =
-          with pkgs;
-          (python3.withPackages (
+          (py.withPackages (
             s: with s; [
               streamlit
               pillow
