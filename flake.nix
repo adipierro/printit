@@ -23,7 +23,7 @@
               qrcode
               requests
               (brother-ql.overrideAttrs {
-                src = fetchFromGitHub {
+                src = pkgs.fetchFromGitHub {
                   owner = "matmair";
                   repo = "brother_ql-inventree";
                   rev = "ceb53b8d7b1b22f5300bbb33ac579eedf554b3ff";
